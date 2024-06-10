@@ -12,7 +12,10 @@
         background-color: rgb(167 243 208);
     }
     .btn {
-      @apply bg-blue-300 rounded-md px-4 py-2 text-center font-medium text-slate-500 shadow-sm ring-1 ring-slate-700/10 hover:bg-slate-50 h-10;
+      @apply bg-green-500 rounded-md px-4 py-2 text-center font-medium text-white shadow-sm ring-1 ring-slate-700/10 hover:bg-slate-50 hover:border-green-500 hover:border-2 hover:text-green-500 h-10;
+    }
+    .btn2 {
+      @apply bg-red-600 rounded-md px-4 py-2 text-center font-medium text-white shadow-sm ring-1 ring-slate-700/10 hover:bg-slate-50 hover:border-rose-500 hover:border-2 hover:text-red-500 h-10;
     }
 
     .input {
