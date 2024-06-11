@@ -9,7 +9,7 @@
   {{-- blade-formatter-disable --}}
   <style type="text/tailwindcss">
     body{
-        background-color: rgb(167 243 208);
+        background-color: rgb(22, 22, 63);
     }
     .btn {
       @apply bg-green-500 rounded-md px-4 py-2 text-center font-medium text-white shadow-sm ring-1 ring-slate-700/10 hover:bg-slate-50 hover:border-green-500 hover:border-2 hover:text-green-500 h-10;
@@ -31,7 +31,7 @@
     }
 
     .filter-item-active {
-      @apply bg-white shadow-sm text-slate-800 flex w-full items-center justify-center rounded-md px-4 py-2 text-center text-sm font-medium;
+      @apply bg-blue-950 shadow-sm text-white flex w-full items-center justify-center rounded-md px-4 py-2 text-center text-sm font-medium;
     }
 
     .book-item {
@@ -43,7 +43,7 @@
     }
 
     .book-author {
-      @apply block text-slate-600;
+      @apply block text-blue-600;
     }
 
     .book-rating {
@@ -51,7 +51,7 @@
     }
 
     .book-review-count {
-      @apply text-xs text-slate-500;
+      @apply text-xs text-yellow-400;
     }
 
     .empty-book-item {
@@ -65,12 +65,15 @@
     .reset-link {
       @apply text-slate-500 underline;
     }
+  
   </style>
   {{-- blade-formatter-enable --}}
 </head>
 
 <body class="container mx-auto mt-10 mb-10 max-w-3xl">
   @yield('content')
+
+  
 </body>
 
 </html>

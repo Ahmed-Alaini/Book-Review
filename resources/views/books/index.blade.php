@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-  <h1 class="mb-10 text-2xl">Books</h1>
+  <h1 class="mb-20 text-2xl  text-white ">Book<span style="color: brown">Shoop</span></h1>
 
-  <form></form>
+  
   <form method="GET" action="{{ route('books.index') }}" class="mb-4 flex items-center space-x-2">
     <input type="text" name="title" placeholder="Search by title"
       value="{{ request('title') }}" class="input h-10" />
@@ -44,10 +44,10 @@
             </div>
             <div>
               <div class="book-rating">
-                {{ number_format($book->reviews_avg_rating, 1) }}
+                <x-star-rating :rating="$book->reviews_avg_rating"/>
               </div>
-              <div class="book-review-count">
-                out of {{ $book->reviews_count }} {{ Str::plural('review', $book->reviews_count) }}
+              <div class="text-xs text-slate-400">
+                {{ $book->reviews_count }} {{ Str::plural('review', $book->reviews_count) }}
               </div>
             </div>
           </div>

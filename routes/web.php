@@ -5,7 +5,7 @@ use PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses;
 
 Route::get('/', function () {
 
-    return ('Hi Everybody');
+    return redirect()->route('books.index');
 });
 
 Route::resource('books',BookController::class );
