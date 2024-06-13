@@ -43,7 +43,7 @@
     }
 
     .book-author {
-      @apply block text-blue-600;
+      @apply block text-blue-300;
     }
 
     .book-rating {
@@ -51,7 +51,7 @@
     }
 
     .book-review-count {
-      @apply text-xs text-yellow-400;
+      @apply text-xs text-yellow-600;
     }
 
     .empty-book-item {
